@@ -1,0 +1,14 @@
+data/raw/*
+results/*
+
+data/processed/*
+!data/processed/Atacama.csv
+!data/processed/Bolzano.csv
+!data/processed/Elazig.csv
+!data/processed/Helsinki.csv
+!data/processed/Islamabad.csv
+!data/processed/Ningxia.csv
+
+!**/.gitkeep
+__pycache__/
+.ipynb_checkpoints/
