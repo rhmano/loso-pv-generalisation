@@ -1,5 +1,8 @@
 # Spatial generalisability of power estimation for new PV plants
 
+[![DOI](https://zenodo.org/badge/1441061794.svg)]
+(https://doi.org/10.5281/zenodo.23841265)
+
 Code for the leave-one-site-out (LOSO) experiments in:
 
 > *Yeni Fotovoltaik Santrallerde Güç Kestiriminin Uzamsal Genellenebilirliği: Makine Öğrenmesi ve Fiziksel Referansın Karşılaştırılması* (citation to be added)
