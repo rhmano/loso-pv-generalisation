@@ -31,15 +31,19 @@ The raw data are not redistributed. Download them from the sources below and pla
 |---|---|---|---|---|
 | Atacama | ATAMOSTEC | https://doi.org/10.5281/zenodo.18317131 | CC BY 4.0 | `ATAMOS/Fixed_PERC/Fixed_PERC.csv` |
 | Bolzano | Eurac Research | https://doi.org/10.5281/zenodo.18316996 | CC BY 4.0 | `EURAC/Trina/Trina.csv` |
-| Elazığ | MİRBEY Enerji | https://doi.org/10.5281/zenodo.21405290 | Apache 2.0 | `Solar Power Plant Production Data.xlsx` |
-| Helsinki | FMI | https://doi.org/10.57707/fmi-b2share.c7b3ec9f19324a6497639d6d8c0cde84 | CC BY | a `.csv` file with `Helsinki` in its name |
+| Elazığ | MİRBEY Enerji | https://doi.org/10.5281/zenodo.19368056 | Apache 2.0 | `Solar Power Plant Production Data.xlsx` |
+| Helsinki | FMI | https://fmi.b2share.csc.fi/records/238fk-zyw57 | CC BY | `FMI_Helsinki_PV.csv` |
 | Islamabad | Figshare | https://doi.org/10.6084/m9.figshare.22579948 | CC BY 4.0 | `weather_data.csv`, `solar_generation_1kW.csv`, `Building_1.csv` |
 | Ningxia | ScienceDB | https://doi.org/10.57760/sciencedb.26284 | CC0 1.0 | `Photovoltaic power data.xlsx` |
-| Yulara | DKASC | https://dkasolarcentre.com.au/source/yulara/yulara-1-fixed | DKASC terms | `5-Site_DG-PV1-DB-DG-M1A.csv` |
+| Yulara | DKASC | https://dkasolarcentre.com.au/download?location=yulara | DKASC terms | Array 1, Desert Gardens: `5-Site_DG-PV1-DB-DG-M1A.csv` |
 
 Processed hourly files for six stations are included in `data/processed/`. The Yulara file is not included because redistribution requires consent under the DKASC terms of use; generate it with `07_Yulara.ipynb` from the raw DKASC file. With these seven files, the experiments can be run from step 2 below.
 
-Relative humidity for Bolzano, Elazığ and Yulara is retrieved from NASA POWER, and wind speed for Islamabad from the Open-Meteo archive, during preprocessing (internet access required).
+Relative humidity for Bolzano, Elazığ and Yulara is retrieved from NASA POWER (Hourly API, version 2.10.3), and wind speed for Islamabad from the Open-Meteo Historical Weather API, during preprocessing (internet access required).
+
+The NASA POWER data were obtained from the National Aeronautics and Space Administration (NASA) Langley Research Center's Prediction Of Worldwide Energy Resources (POWER) project, funded through the NASA Earth Science Division.
+
+Open-Meteo data: Zippenfenig, P. (2023). Open-Meteo.com Weather API. Zenodo. https://doi.org/10.5281/zenodo.7970649. Licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); the data were resampled and aligned to the station's hourly timestamps.
 
 ## Running
 
